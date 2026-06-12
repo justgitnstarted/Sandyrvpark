@@ -153,6 +153,7 @@ nav ul a.nav-cta:hover{background:var(--gold-soft);transform:translate(-1px,-1px
 .about-photo{position:relative;}
 .polaroid{background:#fff;border:3px solid var(--ink);border-radius:8px;padding:12px 12px 46px;box-shadow:var(--shadow);position:relative;}
 .polaroid img,.polaroid .ph-fallback{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;}
+.polaroid svg.illus{width:100%;aspect-ratio:4/3;border-radius:4px;display:block;}
 .polaroid .cap{position:absolute;left:0;right:0;bottom:8px;text-align:center;font-family:'Caveat',cursive;font-size:1.35rem;font-weight:600;color:var(--ink);}
 .polaroid::before{content:"";position:absolute;top:-16px;left:50%;width:110px;height:30px;transform:translateX(-50%) rotate(-3deg);background:rgba(244,184,66,.65);border:1px solid rgba(33,67,74,.15);border-radius:2px;}
 .about-photo .polaroid{transform:rotate(-2.4deg);}
@@ -539,8 +540,26 @@ footer{background:var(--night);color:#D8EEF2;position:relative;}
     <div class="about-grid">
       <div class="about-photo reveal">
         <div class="polaroid">
-          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="Calm lake water at golden hour" loading="lazy" onerror="phFail(this)">
-          <div class="ph-fallback"></div>
+          <svg class="illus" viewBox="0 0 400 300" role="img" aria-label="Illustration of a dock on Lake Eufaula at golden hour">
+            <defs><linearGradient id="duskSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F8CE6F"/><stop offset="1" stop-color="#FDF4E1"/></linearGradient></defs>
+            <rect width="400" height="300" fill="url(#duskSky)"/>
+            <circle cx="300" cy="92" r="34" fill="#F8C84F" stroke="#21434A" stroke-width="3"/>
+            <g fill="#2E5E4E"><rect x="0" y="128" width="400" height="14"/>
+              <polygon points="40,128 30,108 50,108 40,128 34,114 46,114"/>
+              <polygon points="42,130 30,106 54,130"/><polygon points="120,130 110,112 130,130"/>
+              <polygon points="200,130 188,104 212,130"/><polygon points="262,130 252,114 272,130"/>
+              <polygon points="350,130 338,106 362,130"/></g>
+            <rect y="140" width="400" height="160" fill="#3FA9BF"/>
+            <rect y="140" width="400" height="10" fill="#5FBBD6"/>
+            <g fill="#F8CE6F" opacity=".75"><ellipse cx="300" cy="158" rx="30" ry="4"/><ellipse cx="296" cy="174" rx="40" ry="4.5"/><ellipse cx="304" cy="192" rx="26" ry="4"/><ellipse cx="298" cy="212" rx="36" ry="5"/></g>
+            <g stroke="#EAF8FA" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8">
+              <path d="M50 190 q8 -7 16 0 t16 0"/><path d="M120 240 q8 -7 16 0 t16 0"/><path d="M330 250 q8 -7 16 0 t16 0"/></g>
+            <g><polygon points="120,300 200,300 178,152 154,152" fill="#B98A55" stroke="#21434A" stroke-width="3.4" stroke-linejoin="round"/>
+              <g stroke="#8A5A33" stroke-width="3"><line x1="151" y1="180" x2="181" y2="180"/><line x1="146" y1="212" x2="186" y2="212"/><line x1="140" y1="248" x2="192" y2="248"/><line x1="132" y1="288" x2="200" y2="288"/></g>
+              <rect x="146" y="148" width="8" height="26" rx="3" fill="#8A5A33" stroke="#21434A" stroke-width="2.6"/>
+              <rect x="172" y="148" width="8" height="26" rx="3" fill="#8A5A33" stroke="#21434A" stroke-width="2.6"/></g>
+            <g stroke="#21434A" stroke-width="2.6" fill="none" stroke-linecap="round"><path d="M70 70 q6 -7 12 0 q6 -7 12 0"/><path d="M105 52 q5 -6 10 0 q5 -6 10 0"/></g>
+          </svg>
           <div class="cap">home sweet lake</div>
         </div>
         <svg class="about-stamp" viewBox="0 0 120 120" aria-hidden="true">
@@ -620,17 +639,49 @@ footer{background:var(--night);color:#D8EEF2;position:relative;}
     <div class="center reveal">
       <span class="kicker">a peek at the good life</span>
       <h2 class="sec-title">Postcards from the <em>Lake</em></h2>
-      <div class="gal-note">Our photographer visits after the 4th of July. These stand-ins set the mood until the real shots arrive!</div>
+      <div class="gal-note">Lake views are hand-drawn for now: no borrowed mountains here! Real Eufaula photos arrive after the 4th of July.</div>
     </div>
     <div class="gal-grid">
       <div class="polaroid reveal">
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="Still lake water surrounded by trees" loading="lazy" onerror="phFail(this)">
-        <div class="ph-fallback"></div>
+        <svg class="illus" viewBox="0 0 400 300" role="img" aria-label="Illustration of mirror-calm morning water on Lake Eufaula">
+          <defs><linearGradient id="mornSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DFF2F6"/><stop offset="1" stop-color="#FDF4E1"/></linearGradient></defs>
+          <rect width="400" height="300" fill="url(#mornSky)"/>
+          <circle cx="96" cy="84" r="26" fill="#F8C84F" stroke="#21434A" stroke-width="3"/>
+          <g fill="#2E5E4E"><rect x="0" y="138" width="400" height="12"/>
+            <polygon points="60,138 48,112 72,138"/><polygon points="150,138 136,104 164,138"/>
+            <polygon points="230,138 220,118 240,138"/><polygon points="320,138 306,108 334,138"/></g>
+          <rect y="150" width="400" height="150" fill="#BFE8F2"/>
+          <g fill="#3C7560" opacity=".3"><polygon points="60,152 48,178 72,152"/><polygon points="150,152 136,186 164,152"/><polygon points="320,152 306,182 334,152"/></g>
+          <ellipse cx="96" cy="160" rx="28" ry="5" fill="#F8C84F" opacity=".5"/>
+          <g fill="#FFFFFF" opacity=".55"><ellipse cx="120" cy="150" rx="70" ry="9"/><ellipse cx="300" cy="146" rx="60" ry="8"/></g>
+          <g stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" opacity=".9">
+            <path d="M70 220 q9 -8 18 0 t18 0"/><path d="M250 250 q9 -8 18 0 t18 0"/><path d="M180 200 q8 -7 16 0"/></g>
+          <g stroke="#21434A" stroke-width="2.6" fill="none" stroke-linecap="round"><path d="M280 64 q6 -7 12 0 q6 -7 12 0"/><path d="M320 84 q5 -6 10 0 q5 -6 10 0"/></g>
+        </svg>
         <div class="cap">glassy mornings on Eufaula</div>
       </div>
       <div class="polaroid reveal d1">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Soft sand at the water's edge" loading="lazy" onerror="phFail(this)">
-        <div class="ph-fallback"></div>
+        <svg class="illus" viewBox="0 0 400 300" role="img" aria-label="Illustration of the sandy beach with an umbrella and beach toys">
+          <rect width="400" height="300" fill="#BFE8F2"/>
+          <circle cx="330" cy="50" r="24" fill="#F8C84F" stroke="#21434A" stroke-width="3"/>
+          <rect y="78" width="400" height="50" fill="#3FA9BF"/>
+          <path d="M0 78 q12 -6 25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0 t25 0" fill="none" stroke="#5FBBD6" stroke-width="5"/>
+          <path d="M0 128 Q 100 112 200 126 T 400 122 L400 300 L0 300 Z" fill="#F4DFAE"/>
+          <path d="M0 128 Q 100 112 200 126 T 400 122" fill="none" stroke="#FFFDF7" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+          <g><line x1="120" y1="150" x2="138" y2="262" stroke="#8A5A33" stroke-width="6" stroke-linecap="round"/>
+            <path d="M44 158 A 82 82 0 0 1 198 132 L 120 150 Z" fill="#EF7F58" stroke="#21434A" stroke-width="3.4" stroke-linejoin="round"/>
+            <path d="M82 138 L 104 154 M128 124 L 142 146 M166 124 L 158 146" stroke="#FFFDF7" stroke-width="8" stroke-linecap="round" opacity="0"/>
+            <path d="M70 146 L 120 150 M120 128 L 120 150 M170 134 L 120 150" stroke="#21434A" stroke-width="2.4"/>
+            <ellipse cx="150" cy="268" rx="58" ry="10" fill="#21434A" opacity=".12"/></g>
+          <g><path d="M268 240 l36 0 -7 -34 -22 0 Z" fill="#F4B842" stroke="#21434A" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M272 208 a14 12 0 0 1 28 0" fill="none" stroke="#21434A" stroke-width="3"/>
+            <line x1="320" y1="244" x2="334" y2="206" stroke="#EF7F58" stroke-width="6" stroke-linecap="round"/>
+            <path d="M328 250 l16 0 -8 -14 Z" fill="#EF7F58" stroke="#21434A" stroke-width="2.6" stroke-linejoin="round"/></g>
+          <g><circle cx="78" cy="232" r="22" fill="#FFFDF7" stroke="#21434A" stroke-width="3"/>
+            <path d="M78 210 a22 22 0 0 1 19 33 q-14 -16 -19 -33" fill="#EF7F58"/>
+            <path d="M78 210 a22 22 0 0 0 -19 33 q14 -16 19 -33" fill="#3FA9BF"/></g>
+          <g fill="#E5C98E"><ellipse cx="210" cy="200" rx="7" ry="11" transform="rotate(14 210 200)"/><ellipse cx="232" cy="222" rx="7" ry="11" transform="rotate(14 232 222)"/><ellipse cx="218" cy="248" rx="7" ry="11" transform="rotate(14 218 248)"/><ellipse cx="240" cy="270" rx="7" ry="11" transform="rotate(14 240 270)"/></g>
+        </svg>
         <div class="cap">toes in the sand, steps from camp</div>
       </div>
       <div class="polaroid reveal d2">
@@ -639,13 +690,47 @@ footer{background:var(--night);color:#D8EEF2;position:relative;}
         <div class="cap">campfire nights &amp; s'mores</div>
       </div>
       <div class="polaroid reveal">
-        <img src="https://images.unsplash.com/photo-1532339142463-fd0a8979791a?auto=format&fit=crop&w=900&q=80" alt="RV parked among trees" loading="lazy" onerror="phFail(this)">
-        <div class="ph-fallback"></div>
+        <svg class="illus" viewBox="0 0 400 300" role="img" aria-label="Illustration of a camper settled in at its site at dusk">
+          <defs><linearGradient id="campDusk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F8B49B"/><stop offset="1" stop-color="#F8CE6F"/></linearGradient></defs>
+          <rect width="400" height="300" fill="url(#campDusk)"/>
+          <circle cx="84" cy="74" r="26" fill="#F8C84F" stroke="#21434A" stroke-width="3"/>
+          <g fill="#2E5E4E"><polygon points="350,208 322,208 336,138"/><polygon points="392,212 366,212 379,156"/><polygon points="32,210 8,210 20,158"/></g>
+          <path d="M0 208 Q 200 192 400 210 L400 300 L0 300 Z" fill="#E8D29A"/>
+          <g transform="translate(110,250)">
+            <rect x="0" y="-78" width="150" height="70" rx="16" fill="#FFF8EC" stroke="#21434A" stroke-width="3.6"/>
+            <path d="M2 -44 Q 38 -56 76 -44 T 148 -44 L148 -34 Q 112 -46 74 -34 T 2 -34 Z" fill="#177D6E" opacity=".9"/>
+            <rect x="16" y="-66" width="40" height="26" rx="7" fill="#F8C84F" stroke="#21434A" stroke-width="3"/>
+            <rect x="110" y="-58" width="28" height="50" rx="6" fill="#177D6E" stroke="#21434A" stroke-width="3"/>
+            <circle cx="34" cy="-2" r="13" fill="#21434A"/><circle cx="34" cy="-2" r="5.5" fill="#FFFDF7"/>
+            <circle cx="116" cy="-2" r="13" fill="#21434A"/><circle cx="116" cy="-2" r="5.5" fill="#FFFDF7"/>
+          </g>
+          <path d="M262 186 Q 296 214 330 196" fill="none" stroke="#21434A" stroke-width="2.4"/>
+          <g fill="#F8C84F" stroke="#21434A" stroke-width="1.4"><circle cx="276" cy="198" r="4.5"/><circle cx="296" cy="204" r="4.5"/><circle cx="316" cy="202" r="4.5"/></g>
+          <g transform="translate(310,258)"><rect x="-26" y="-12" width="52" height="7" rx="3" fill="#B98A55" stroke="#21434A" stroke-width="2.4"/><line x1="-18" y1="-5" x2="-24" y2="14" stroke="#21434A" stroke-width="3"/><line x1="18" y1="-5" x2="24" y2="14" stroke="#21434A" stroke-width="3"/><rect x="-34" y="2" width="22" height="5" rx="2.5" fill="#B98A55" stroke="#21434A" stroke-width="2"/><rect x="12" y="2" width="22" height="5" rx="2.5" fill="#B98A55" stroke="#21434A" stroke-width="2"/></g>
+        </svg>
         <div class="cap">room for every rig</div>
       </div>
       <div class="polaroid reveal d1">
-        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=80" alt="Canoe gliding across calm water" loading="lazy" onerror="phFail(this)">
-        <div class="ph-fallback"></div>
+        <svg class="illus" viewBox="0 0 400 300" role="img" aria-label="Illustration of a small fishing boat on flat open water">
+          <defs><linearGradient id="boatSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9E1F2"/><stop offset="1" stop-color="#E4F6EC"/></linearGradient></defs>
+          <rect width="400" height="300" fill="url(#boatSky)"/>
+          <circle cx="320" cy="58" r="24" fill="#F8C84F" stroke="#21434A" stroke-width="3"/>
+          <g fill="#2E5E4E" opacity=".85"><rect x="0" y="116" width="400" height="9"/><polygon points="50,116 42,100 58,116"/><polygon points="120,116 110,96 130,116"/><polygon points="300,116 292,102 308,116"/><polygon points="360,116 350,98 370,116"/></g>
+          <rect y="125" width="400" height="175" fill="#3FA9BF"/>
+          <rect y="125" width="400" height="9" fill="#5FBBD6"/>
+          <g transform="translate(180,205)">
+            <path d="M-70 0 Q -74 22 -52 26 L 52 26 Q 74 22 70 0 Z" fill="#FFF8EC" stroke="#21434A" stroke-width="3.6" stroke-linejoin="round"/>
+            <path d="M-68 6 L 68 6" stroke="#177D6E" stroke-width="6"/>
+            <line x1="-34" y1="2" x2="-34" y2="24" stroke="#21434A" stroke-width="3"/>
+            <line x1="30" y1="2" x2="30" y2="24" stroke="#21434A" stroke-width="3"/>
+            <line x1="44" y1="0" x2="92" y2="-58" stroke="#8A5A33" stroke-width="4" stroke-linecap="round"/>
+            <path d="M92 -58 q22 10 24 38" fill="none" stroke="#21434A" stroke-width="2"/>
+            <g><circle cx="116" cy="-14" r="8" fill="#FFFDF7" stroke="#21434A" stroke-width="2.6"/><path d="M108.3 -16 a8 8 0 0 1 15.4 0 Z" fill="#EF7F58"/></g>
+          </g>
+          <g stroke="#EAF8FA" stroke-width="3" fill="none" stroke-linecap="round" opacity=".85">
+            <path d="M70 260 q9 -8 18 0 t18 0"/><path d="M270 252 q9 -8 18 0 t18 0"/><path d="M292 196 q8 -7 16 0"/><path d="M60 170 q8 -7 16 0 t16 0"/></g>
+          <g stroke="#21434A" stroke-width="2.6" fill="none" stroke-linecap="round"><path d="M80 60 q6 -7 12 0 q6 -7 12 0"/><path d="M130 80 q5 -6 10 0 q5 -6 10 0"/></g>
+        </svg>
         <div class="cap">out on the water</div>
       </div>
       <div class="polaroid reveal d2">
